@@ -604,9 +604,7 @@ let obj = [
 ]
 
 let selectBox = document.getElementById("select")
-
 Object.keys(obj[0]).map(key => {
-
     var option = document.createElement("option");
     option.text = key;
     option.value = key;
@@ -614,14 +612,14 @@ Object.keys(obj[0]).map(key => {
 })
 
 function search() {
-    let selecteditem = document.getElementById("select").value
+    let filterType = document.getElementById("select").value
     let input = document.getElementById("filterItem").value
 
     let filtered;
-    selecteditem ?
-        ((selecteditem == "userId") || (selecteditem == "id")) ?
-            filtered = obj.filter(item => item[selecteditem] == input) :
-            filtered = obj.filter(item => item[selecteditem].toLowerCase().indexOf(input.toLocaleLowerCase()) > -1) :
+    filterType ?
+        ((filterType == "userId") || (filterType == "id")) ?
+            filtered = obj.filter(item => item[filterType] == input) :
+            filtered = obj.filter(item => item[filterType].toLowerCase().indexOf(input.toLocaleLowerCase()) > -1) :
         alert("Please select sort type")
     console.log(filtered)
 }
