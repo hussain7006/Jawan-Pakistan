@@ -1,0 +1,68 @@
+.nav {
+    width: 100vw;
+    background-color: green;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15vh;
+    
+}
+
+.subhead {
+    display: flex;
+    justify-content: center;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.inputsMain{
+
+    border: 2px solid;
+    border-radius: 15px;
+    height: 50vh;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+}
+.inputs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sort {
+    padding: 10px;
+    margin: 2px;
+    font-size: large;
+    border-radius: 5px;
+}
+
+button {
+    font-weight: bold;
+}
+
+.icon {
+    position: relative;
+    right: 30px;
+}
+
+.footer{
+    width: 100vw;
+    background-color: darkblue;
+    height: 15vh;
+    position: absolute;
+    bottom: 0px;
+    color: white;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
